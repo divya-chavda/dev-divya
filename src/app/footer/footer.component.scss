@@ -1,0 +1,78 @@
+/** 
+ * ===================================================================
+ * 18. footer - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+footer {
+  padding-bottom: 3rem;
+  font-size: 1.4rem;
+  font-family: "poppins-regular", sans-serif;
+  a,
+  a:visited {
+    color: #ffffff;
+  }
+  a:hover,
+  a:focus {
+    color: #ff0077;
+  }
+  .row {
+    max-width: 900px;
+  }
+  .social {
+    text-align: right;
+  }
+
+  .footer-social {
+    display: inline-block;
+    font-size: 2.1rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -0.3rem;
+  }
+  .footer-social li {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 0;
+  }
+  .footer-social li a {
+    color: #ffffff;
+  }
+  .copyright span {
+    display: inline-block;
+  }
+  .copyright span::after {
+    content: "|";
+    display: inline-block;
+    padding: 0 1rem 0 1.2rem;
+    color: rgba(255, 255, 255, 0.1);
+  }
+  .copyright span:last-child::after {
+    display: none;
+  }
+}
+/**
+   * responsive:
+   * footer
+   * -------------------------------------------------------------------
+   */
+
+@media only screen and (max-width: 768px) {
+  footer {
+    text-align: center;
+    .social {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .copyright span {
+      display: block;
+    }
+    .copyright span::after {
+      display: none;
+    }
+  }
+}

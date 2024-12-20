@@ -1,0 +1,51 @@
+<section class="intro">
+  <header>
+    <div class="section-menu">
+      <div class="logo-bar">
+        <a class="logo" href="index.html"> </a>
+      </div>
+      <div class="menu-options">
+        <div class="menu-item" *ngFor="let item of menuItems">
+          {{ item.menuTitle }}
+          <app-icon-svg [iconName]="'link_arrow'"></app-icon-svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="intro-overlay"></div>
+
+  <div class="intro-content">
+    <div class="row">
+      <div class="col-twelve baner-text">
+        <h2 class="title">Hi, I’m Divya,</h2> <br />
+        <h3 class="sub-title">A Full stack Developer</h3>
+        <p class="text-style">A full stack developer transforming complex challenges into scalable software solutions,
+          empowering
+          businesses to innovate, grow, and succeed.</p>
+        <p>Currently working as a Senior software developer in Citi Bank. Pune, Maharashtra</p>
+      </div>
+    </div>
+    <!-- <div class="banner-image">
+      <img src="images/banner.png" style="position: relative; bottom: -30px" />
+    </div> -->
+  </div>
+  <!-- /intro-content -->
+  <!-- <ul class="intro-social">
+    <li>
+      <a href="https://www.linkedin.com/in/divya-chavda-2b1616120/"><i class="fa fa-linkedin"></i></a>
+    </li>
+    <li>
+      <a href="https://twitter.com/ms_sensational_"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/ms_divyachavda/"><i class="fa fa-instagram"></i></a>
+    </li>
+    <li>
+      <a href="https://github.com/divya-chavda"><i class="fa fa-github"></i></a>
+    </li>
+    <li>
+      <a href="mailto:divyachavda30@gmail.com"><i class="fa fa-envelope"></i></a>
+    </li>
+  </ul> -->
+  <!-- /intro-social -->
+</section>
