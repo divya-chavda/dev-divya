@@ -1,0 +1,121 @@
+.skills-tab {
+  padding: 30px 120px;
+  margin: 30px 0;
+  .title {
+    color: #fff;
+    font-family: Outfit;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .skill-info {
+    margin: 50px 0;
+  }
+  .skills {
+    position: relative;
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 0, 0, 1) 27%,
+      rgba(0, 143, 245, 1) 73%
+    );
+    height: 500px;
+    padding: 0 10px;
+    border-radius: 20px;
+    .icon {
+      width: 105px;
+      height: 105px;
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: all;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    .top-container {
+      position: absolute;
+      bottom: 330px;
+      div#top-0 {
+        margin-left: 200px;
+        transform: rotate(27deg);
+      }
+    }
+
+    .second-top-container {
+      display: flex;
+      bottom: 230px;
+      position: absolute;
+
+      div#secondTop-0 {
+        margin-left: 150px;
+        transform: translateY(14px) rotate(-14.048deg);
+      }
+      div#secondTop-1 {
+        transform: translateX(1px) translateY(4px) rotate(10.952deg);
+      }
+      div#secondTop-2 {
+        margin-left: 283px;
+        transform: translateY(4px) rotate(-45deg);
+      }
+    }
+    .bottom-container {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      border-radius: 12px;
+      height: 400px;
+      flex-direction: row;
+      position: absolute;
+      bottom: 0;
+
+      .icon svg {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      div#bottom-7 {
+        margin-left: 23px;
+      }
+      div#bottom-4 {
+        margin-left: 50px;
+      }
+    }
+
+    .middle-container {
+      display: flex;
+      bottom: 110px;
+      position: absolute;
+      .icon:nth-child(1) {
+        transform: rotate(17.687deg);
+        margin-left: 86px;
+      }
+
+      .icon:nth-child(2) {
+        transform: translateX(7px) rotate(-21.811deg);
+      }
+
+      .icon:nth-child(3) {
+        transform: translateX(10px) translateY(-11px) rotate(38.189deg);
+      }
+      .icon:nth-child(4) {
+        transform: translateY(-1px);
+        margin-left: 160px;
+      }
+      .icon:nth-child(5) {
+        transform: translateY(-1px);
+      }
+
+      .icon:nth-child(6) {
+        transform: translateX(120px) translateY(-9px) rotate(-17deg); /* Slightly raise the second icon */
+      }
+    }
+  }
+}

@@ -1,27 +1,11 @@
-<!-- <footer class="row footer">
-  <ul class="intro-social">
-    <li>
-      <a href="https://www.linkedin.com/in/divya-chavda-2b1616120/"
-        ><i class="fa fa-linkedin"></i
-      ></a>
-    </li>
-    <li>
-      <a href="https://twitter.com/ms_sensational_"
-        ><i class="fa fa-twitter"></i
-      ></a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/ms_divyachavda/"
-        ><i class="fa fa-instagram"></i
-      ></a>
-    </li>
-    <li>
-      <a href="https://github.com/divya-chavda"><i class="fa fa-github"></i></a>
-    </li>
-    <li>
-      <a href="mailto:divyachavda30@gmail.com"
-        ><i class="fa fa-envelope"></i
-      ></a>
-    </li>
-  </ul>
-</footer> -->
+<footer class="footer-container">
+  <p>Let’s <br />Connect.</p>
+  <div class="menu-options">
+    <div class="menu-item" *ngFor="let item of menuItems">
+
+      <app-icon-svg [iconName]="'link_arrow'"></app-icon-svg>
+      {{ item.menuTitle }}
+    </div>
+  </div>
+  <p class="copyright">@DivyaChavda_2025</p>
+</footer>

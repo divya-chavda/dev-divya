@@ -1,1 +1,43 @@
-<!-- <div class="row">Home</div> -->
+<section class="skills-tab">
+    <div class="row title">
+        Technical Toolkit
+    </div>
+    <div class="skill-info">
+        <h3>Java</h3>
+        <p>I have over 3 years of experience working with Java, where I’ve built and optimized backend systems using
+            Spring Boot and Microservices. I’ve successfully integrated Kafka to enhance communication between services
+            and upgraded applications to the latest Java standards for improved performance and security. My work
+            focuses on creating scalable, efficient, and reliable solutions for enterprise-grade applications.</p>
+    </div>
+    <div class="row skills ">
+        <div class="top-container">
+            <div class="skill-item icon animated-element" *ngFor="let item of topSkill, let i = index" [id]="'top-'+i">
+                <app-icon-svg [iconName]="item+'_skill'"></app-icon-svg>
+            </div>
+
+        </div>
+        <div class="second-top-container">
+            <div class="skill-item icon animated-element" *ngFor="let item of secondTopSkills, let i = index"
+                [id]="'secondTop-'+i">
+                <app-icon-svg [iconName]="item+'_skill'"></app-icon-svg>
+            </div>
+
+        </div>
+        <div class="middle-container">
+            <div class="skill-item icon animated-element" *ngFor="let item of midSkills, let i = index"
+                [id]="'middle-'+i">
+                <app-icon-svg [iconName]="item+'_skill'"></app-icon-svg>
+            </div>
+
+        </div>
+
+        <div class="bottom-container">
+            <div class="skill-item icon animated-element" *ngFor="let item of skills, let i = index" [id]="'bottom-'+i">
+                <app-icon-svg [iconName]="item+'_skill'"></app-icon-svg>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>

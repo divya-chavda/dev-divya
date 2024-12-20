@@ -36,6 +36,7 @@
  */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@200&display=swap");
 // @import "font-awesome";
 /** 
   * ===================================================================
@@ -128,7 +129,7 @@ h6,
 .h05,
 .h06 {
   font-family: "Outfit", serif;
-  color: #313131;
+  color: #cbcbcb;
   font-style: normal;
   text-rendering: optimizeLegibility;
   margin-bottom: 2.1rem;
