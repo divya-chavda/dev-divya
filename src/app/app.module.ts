@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconSvgComponent } from './icon-svg/icon-svg.component';
+import { ClientFeedbackComponent } from './client-feedback/client-feedback.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { IconSvgComponent } from './icon-svg/icon-svg.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    IconSvgComponent
+    IconSvgComponent,
+    ClientFeedbackComponent
   ],
   imports: [
     BrowserModule,

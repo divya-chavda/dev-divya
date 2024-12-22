@@ -1,0 +1,24 @@
+<section class="client-feedback-container">
+    <div class="skill-info">
+        <h3 class="title">Client & Colleague Feedback</h3>
+        <div class="feedbacks">
+            <p class="desc" [innerHTML]="activeFeedback.content">
+            </p>
+        </div>
+        <div class="client-container">
+            <div class="scrollable">
+                <div *ngFor="let item of recommendations, let i = index"
+                    [ngClass]="activeFeedback.id == i ? 'item-container active' : 'item-container' "
+                    (click)="changeActive(item)">
+                    <div class="profile">
+                        <img src="../../assets/profile-pic.jpg" />
+                    </div>
+                    <div class="details">
+                        <p class="name">{{item.name}}</p>
+                        <p class="role">{{item.role}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

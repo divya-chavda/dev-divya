@@ -1,0 +1,67 @@
+.client-feedback-container {
+  position: relative;
+  padding: 50px 110px;
+  background: #191919;
+  .desc {
+    color: #fff;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 140%;
+    margin: 25px 0;
+  }
+  .skill-info {
+    .client-container {
+      overflow-x: scroll;
+      scrollbar-width: none;
+      .scrollable {
+        display: flex;
+        margin: 20px 0;
+        width: fit-content;
+        .item-container {
+          padding: 10px 15px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 400px;
+          height: 86px;
+          margin: 0 15px;
+          border-radius: 45px;
+          cursor: pointer;
+          background: linear-gradient(17deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+          .profile {
+            img {
+              width: 62px;
+              height: 62px;
+              border-radius: 50%;
+            }
+          }
+          font-family: Outfit;
+          line-height: 28px;
+          .details {
+            height: 100%;
+            margin: 5px 10px;
+            .name {
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 28px;
+              margin-bottom: 5px;
+            }
+            .role {
+              font-size: 14px;
+              font-weight: 200;
+            }
+          }
+        }
+        .item-container.active {
+          background: linear-gradient(
+            180deg,
+            rgb(34 34 34) 0%,
+            rgb(42 104 205) 27%,
+            rgb(71 178 255) 73%
+          );
+        }
+      }
+    }
+  }
+}

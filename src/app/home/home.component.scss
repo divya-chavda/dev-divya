@@ -1,14 +1,7 @@
 .skills-tab {
-  padding: 30px 120px;
+  padding: 30px 110px;
   margin: 30px 0;
-  .title {
-    color: #fff;
-    font-family: Outfit;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
+
   .skill-info {
     margin: 50px 0;
   }
@@ -37,10 +30,7 @@
       transition: all;
       transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
-    .icon:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
+
     .top-container {
       position: absolute;
       bottom: 330px;
@@ -115,8 +105,18 @@
       }
 
       .icon:nth-child(6) {
-        transform: translateX(120px) translateY(-9px) rotate(-17deg); /* Slightly raise the second icon */
+        transform: translateX(120px) translateY(-9px) rotate(-17deg);
+        :hover,
+        :focus {
+          transform: translateX(120px) translateY(-9px) rotate(-17deg)
+            scale(1.5);
+        }
       }
+    }
+    .animated-element:hover,
+    .animated-element:focus {
+      scale: 1.2 !important;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
   }
 }
