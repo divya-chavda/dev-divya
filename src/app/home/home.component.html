@@ -10,20 +10,20 @@
             focuses on creating scalable, efficient, and reliable solutions for enterprise-grade applications.</p>
     </div>
     <div class="row skills ">
-        <div class="top-container">
+        <div class="top-container" *ngIf="!isMobile">
             <div class="skill-item icon animated-element" *ngFor="let item of topSkill, let i = index" [id]="'top-'+i">
                 <app-icon-svg [iconName]="item+'_skill'"></app-icon-svg>
             </div>
 
         </div>
-        <div class="second-top-container">
+        <div class="second-top-container" *ngIf="!isMobile">
             <div class="skill-item icon animated-element" *ngFor="let item of secondTopSkills, let i = index"
                 [id]="'secondTop-'+i">
                 <app-icon-svg [iconName]="item+'_skill'"></app-icon-svg>
             </div>
 
         </div>
-        <div class="middle-container">
+        <div class="middle-container" *ngIf="!isMobile">
             <div class="skill-item icon animated-element" *ngFor="let item of midSkills, let i = index"
                 [id]="'middle-'+i">
                 <app-icon-svg [iconName]="item+'_skill'"></app-icon-svg>

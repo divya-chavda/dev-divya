@@ -37,17 +37,25 @@ export class HomeComponent {
   midSkills: String[] = [];
   secondTopSkills: String[] = [];
   topSkill: String[] = [];
+  isMobile = false;
   ngOnInit() {
+    if (window.screen.availWidth < 690) {
+      this.isMobile = true;
+    }
+
     const shuffledSkills = [...this.combinedSkills].sort(
       () => Math.random() - 0.5
     );
-
-    this.skills = shuffledSkills.splice(0, this.lengths.skills);
-    this.midSkills = shuffledSkills.splice(0, this.lengths.midSkills);
-    this.secondTopSkills = shuffledSkills.splice(
-      0,
-      this.lengths.secondTopSkills
-    );
-    this.topSkill = shuffledSkills.splice(0, this.lengths.topSkill);
+    if (!this.isMobile) {
+      this.skills = shuffledSkills.splice(0, this.lengths.skills);
+      this.midSkills = shuffledSkills.splice(0, this.lengths.midSkills);
+      this.secondTopSkills = shuffledSkills.splice(
+        0,
+        this.lengths.secondTopSkills
+      );
+      this.topSkill = shuffledSkills.splice(0, this.lengths.topSkill);
+    } else {
+      this.skills = shuffledSkills;
+    }
   }
 }

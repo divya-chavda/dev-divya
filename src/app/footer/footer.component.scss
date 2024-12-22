@@ -37,3 +37,27 @@
     margin: 0;
   }
 }
+
+@media (min-width: 200px) and (max-width: 690px) {
+  .footer-container {
+    display: block;
+    padding: 40px;
+    font-size: 25px;
+    background-color: rgb(1 18 28);
+    background-position: bottom;
+    .menu-options {
+      margin-bottom: 15px;
+      justify-content: center;
+      .menu-item {
+        font-size: 16px;
+        margin: 0 6px;
+      }
+    }
+    .copyright {
+      position: relative;
+      text-align: center;
+      right: 0;
+      font-size: 16px;
+    }
+  }
+}

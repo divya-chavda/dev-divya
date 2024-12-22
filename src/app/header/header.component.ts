@@ -16,4 +16,10 @@ export class HeaderComponent {
       menuLink: "",
     },
   ];
+  isMobile = false;
+  ngOnInit() {
+    if (window.screen.availWidth < 690) {
+      this.isMobile = true;
+    }
+  }
 }

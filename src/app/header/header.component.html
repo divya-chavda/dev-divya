@@ -4,7 +4,7 @@
       <div class="logo-bar">
         <a class="logo" href="index.html"> </a>
       </div>
-      <div class="menu-options">
+      <div class="menu-options" *ngIf="!isMobile">
         <div class="menu-item" *ngFor="let item of menuItems">
           {{ item.menuTitle }}
           <app-icon-svg [iconName]="'link_arrow'"></app-icon-svg>

@@ -102,3 +102,22 @@ header {
     }
   }
 }
+
+@media (min-width: 200px) and (max-width: 690px) {
+  header {
+    .section-menu {
+      padding: 10px;
+    }
+  }
+  .intro {
+    .intro-content {
+      .baner-text {
+        padding: 65px 40px;
+        .text-style {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
